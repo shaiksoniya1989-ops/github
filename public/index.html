@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jarvis Helper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">J</div>
+        <div>
+          <p class="eyebrow">AI Problem Solver</p>
+          <h1>Jarvis Helper</h1>
+        </div>
+      </div>
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        Online
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="hero panel">
+        <div class="hero-copy">
+          <p class="tag">Daily Support for Real Life</p>
+          <h2>Helping people solve problems, one step at a time.</h2>
+          <p>
+            Ask for help with money, stress, study, work, home problems, or life decisions.
+            This assistant turns confusion into a clear action plan.
+          </p>
+          <div class="quick-actions">
+            <button class="chip" data-question="I feel stressed and overwhelmed">Stress</button>
+            <button class="chip" data-question="I need help with my budget and saving money">Money</button>
+            <button class="chip" data-question="How can I study smarter for exams?">Study</button>
+            <button class="chip" data-question="My home and equipment are broken">Home</button>
+          </div>
+        </div>
+        <div class="orb-wrap">
+          <div class="orb-core">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orb-center">J</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chat-panel panel">
+        <div class="chat-header">
+          <h3>Ask Jarvis</h3>
+          <span>Live guidance</span>
+        </div>
+
+        <div id="chatBox" class="chat-box" aria-live="polite">
+          <div class="message assistant">
+            <p>Hello! Tell me what problem you want help solving today.</p>
+          </div>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <input id="userInput" type="text" placeholder="Type your problem here..." aria-label="Type your problem" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

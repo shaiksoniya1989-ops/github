@@ -1,0 +1,12 @@
+{
+  "name": "jarvis-helper-app",
+  "version": "1.0.0",
+  "description": "AI-inspired assistant that helps people solve everyday problems online",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
